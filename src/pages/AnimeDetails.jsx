@@ -77,6 +77,10 @@ export default function AnimeDetails() {
   }, [id]);
 
   const animeIdStr = anime ? String(anime.id) : '';
+  const watchItem = (watchlist || []).find((item) => item && String(item.anime_id) === animeIdStr);
+  const isInList = Boolean(watchItem);
+  const currentStatus = watchItem?.status || 'Watching';
+
   const currentSeason = guide?.seasons?.[activeSeasonIndex] || {
     seasonNumber: 1,
     seasonTitle: 'SEASON 1',
@@ -156,10 +160,6 @@ export default function AnimeDetails() {
       </div>
     );
   }
-
-  const watchItem = watchlist.find((item) => String(item.anime_id) === animeIdStr);
-  const isInList = Boolean(watchItem);
-  const currentStatus = watchItem?.status || 'Watching';
 
   // Canonical Franchise Title (Ensures NO "Season 2" or "2nd Season" duplicates!)
   const rawTitle = anime.title?.english || anime.title?.romaji || 'Anime';

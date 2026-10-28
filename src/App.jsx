@@ -13,6 +13,7 @@ import OnboardingModal from './components/OnboardingModal';
 import GoogleLoginModal from './components/GoogleLoginModal';
 import QuickSearchModal from './components/QuickSearchModal';
 import ScrollToTop from './components/ScrollToTop';
+import ErrorBoundary from './components/ErrorBoundary';
 
 import Home from './pages/Home';
 import Search from './pages/Search';
@@ -104,7 +105,9 @@ export default function App() {
           <ReviewsProvider>
             <Router>
               <ScrollToTop />
-              <AppContent />
+              <ErrorBoundary>
+                <AppContent />
+              </ErrorBoundary>
             </Router>
           </ReviewsProvider>
         </WatchlistProvider>
