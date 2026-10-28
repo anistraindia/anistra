@@ -89,7 +89,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-base font-bold text-white mb-2">8. Data Retention & Account Deletion</h2>
             <p>
-              You have the right to request deletion of your ANISTRA account and all associated watchlist items, episode tracking timestamps, and written reviews. You can trigger data removal through your profile settings or by contacting privacy@anistra.app.
+              You have the right to request deletion of your ANISTRA account and all associated watchlist items, episode tracking timestamps, and written reviews. You can trigger data removal through your profile settings or by contacting <a href="mailto:mail@anistra.info" className="text-[#1e90ff] hover:underline">mail@anistra.info</a>.
             </p>
           </section>
 

@@ -24,10 +24,10 @@ export default function Footer() {
         </Link>
         
         <a 
-          href="mailto:support@anistra.app"
+          href="mailto:mail@anistra.info"
           className="text-xs text-zinc-400 hover:text-[#1e90ff] transition-colors font-medium tracking-wide"
         >
-          support@anistra.app
+          mail@anistra.info
         </a>
         
         <p className="text-[11px] text-zinc-500 font-normal">
@@ -57,7 +57,7 @@ export default function Footer() {
               High-contrast anime discovery, personal tracking, and verified critique ecosystem with dark cinematic depth and canonical episode tracking.
             </p>
             <p className="text-xs text-zinc-400 mt-2">
-              Inquiries: <a href="mailto:support@anistra.app" className="text-[#1e90ff] hover:underline">support@anistra.app</a>
+              Inquiries: <a href="mailto:mail@anistra.info" className="text-[#1e90ff] hover:underline">mail@anistra.info</a>
             </p>
           </div>
 
